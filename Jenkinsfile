@@ -6,6 +6,7 @@ pipeline {
             steps {
                 echo 'sending helloWorld'
                 publishEvent simpleEvent('helloWorld')
+                sh 'printenv'
             }
         }
     }
