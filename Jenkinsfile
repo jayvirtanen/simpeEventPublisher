@@ -5,6 +5,7 @@ pipeline {
         stage('Example') {
             steps {
                 echo 'sending helloWorld'
+                sh 'printenv'
                 publishEvent simpleEvent('helloWorld')
             }
         }
